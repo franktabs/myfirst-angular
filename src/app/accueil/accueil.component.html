@@ -1,0 +1,9 @@
+<div class="content">
+  <div class="loading"  *ngIf="loading">
+    <div class="lds-hourglass"></div>
+  </div>
+
+  <button (click)="handleClick()" class="button" role="button">
+    <span>{{ titleButton | titlecase }} 🙂</span>
+  </button>
+</div>

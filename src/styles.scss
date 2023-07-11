@@ -1,1 +1,163 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:Arial, Helvetica, sans-serif
+}
+
+body.dark {
+  background-color: rgb(54, 54, 54);
+}
+
+body {
+  background-color: rgba(250, 250, 250, 0.686);
+}
+
+.lds-hourglass {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 32px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: #fff;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+
+.lds-facebook div:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.24s;
+}
+
+.lds-facebook div:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.12s;
+}
+
+.lds-facebook div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0;
+}
+
+@keyframes lds-facebook {
+  0% {
+    top: 4px;
+    height: 32px;
+  }
+
+  50%,
+  100% {
+    top: 8px;
+    height: 16px;
+  }
+}
+
+
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+
+@keyframes topToBottom {
+  0% {
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+
+  90% {
+    opacity: .8;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes lowerToUpper {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+
+  90% {
+    opacity: .8;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes balancedScale{
+  0%{
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  30%{
+    transform: scale(1.6);
+    opacity: .8;
+  }
+  60%{
+    transform: scale(.7);
+    opacity: 1;
+  }
+
+  70%{
+    transform: scale(1.3);
+  }
+  80%{
+    transform: scale(.9);
+  }
+  90%{
+    transform: scale(1.2);
+  }
+  95%{
+    transform: scale(.95);
+  }
+  98%{
+    transform: scale(1.05);
+  }
+  100%{
+    transform: scale(1);
+
+  }
+}

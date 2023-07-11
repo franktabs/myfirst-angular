@@ -1,0 +1,36 @@
+<div class="content">
+  <div class="card">
+    <h1>{{  faceSnap.title }} </h1>
+    <hr>
+    <p>
+      {{  faceSnap.description }}
+    </p>
+    <div class="image" *ngIf="viewPhoto">
+      <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title">
+    </div>
+    <hr>
+    <div class="button-content">
+      <button (click)="handleClick()" *ngIf="!buttonRetour" class="button-pushable" role="button">
+        <span class="button-shadow"></span><span class="button-edge btn-edge"></span><span
+          class="button-front btn-front text">
+          <span [ngClass]="buttonLoading?'not-visible':'visible'">Voir
+            Photo</span>
+          <div class="loading-btn" [ngClass]="buttonLoading?'visible':'not-visible'">
+            <div class="lds-facebook">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </span>
+      </button>
+      <button (click)="handleClick()" *ngIf="buttonRetour" class="button-pushable" role="button"><span
+          class="button-shadow"></span><span class="button-edge btn-edge2"></span>
+        <span class="button-front btn-front2 text">
+          <i class="bi bi-backspace-fill"></i> Retour
+        </span>
+      </button>
+    </div>
+
+  </div>
+</div>

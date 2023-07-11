@@ -1,0 +1,10 @@
+<header>
+  <nav>
+    <a routerLink="/" class="logo">FirstApp</a>
+    <a routerLink="/">ACCUEIL</a>
+    <span class="theme" (click)="clickTheme()" >
+      <i class="bi bi-brightness-high-fill" *ngIf="themeDark"></i>
+      <i class="bi bi-moon-stars-fill" *ngIf="!themeDark"></i>
+    </span>
+  </nav>
+</header>
