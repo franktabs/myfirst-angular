@@ -1,8 +1,15 @@
 header{
   background-color: black;
   color: white;
-  font-size: 1em;
+  font-size: 1.2em;
+
+  &.dark {
+    background-color: rgb(0, 37, 248);
+    color: black;
+
+  }
 }
+
 .logo{
   font-weight: bold;
 }
@@ -11,8 +18,14 @@ a{
   color: white;
   text-decoration: none;
 
+
   &:hover{
     color: rgb(107, 213, 252);
+
+    &.dark{
+    color: rgb(0, 187, 254);
+
+    }
   }
 }
 

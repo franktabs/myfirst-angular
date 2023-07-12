@@ -11,12 +11,12 @@ export class NavbarComponent implements OnInit {
   constructor(private darkMode:DarkMode){}
 
   ngOnInit(): void {
-      this.themeDark = this.darkMode.dark
+      this.themeDark = this.darkMode.getDark()
   }
 
   clickTheme(){
     console.log("click button theme");
-    this.darkMode.dark = !this.darkMode.dark;
-    this.themeDark = this.darkMode.dark;
+    this.darkMode.setDark(!this.darkMode.getDark());
+    this.themeDark = this.darkMode.getDark();
   }
 }

@@ -7,6 +7,7 @@ import { FaceSnapComponent } from './face-snap/face-snap.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { FaceSnapListComponent } from './face-snap-list/face-snap-list.component';
+import { DarkMode } from './service/theme.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { FaceSnapListComponent } from './face-snap-list/face-snap-list.component
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [DarkMode],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

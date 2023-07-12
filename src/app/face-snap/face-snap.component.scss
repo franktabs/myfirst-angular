@@ -2,14 +2,23 @@
   padding: 1em;
   max-width: 480px;
   width: 100%;
-  transition: all ;
+  transition: all;
   animation: lowerToUpper .5s linear;
+
+
 }
 
 .card {
   border: 1px solid rgb(228, 228, 228);
   box-shadow: 2px 2px 10px rgba(148, 148, 148, 0.872);
   padding: 1em;
+
+
+  &.dark {
+    background-color: rgb(231, 231, 231);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.872);
+
+  }
 
   p {
     padding: 1em 0;
@@ -131,9 +140,9 @@
     padding: 8px 10px;
   }
 
-  .card{
+  .card {
 
-    h1{
+    h1 {
       font-size: 3em;
     }
   }

@@ -9,15 +9,7 @@ import { DarkMode } from './service/theme.service';
 })
 
 
-export class AppComponent implements OnInit  {
+export class AppComponent  {
 
-  constructor(private darkMode: DarkMode){}
-
-  ngOnInit(): void {
-      let docum = document.body;
-      if(this.darkMode.dark){
-        docum.classList.add('dark');
-      }
-  }
 }
 
